@@ -13,3 +13,9 @@ body {
     padding: 10px;
     margin: 10px;
 }
+
+#count {
+    color: white;
+    text-align: center;
+    font-size: 4em;
+}
