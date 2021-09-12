@@ -3,12 +3,6 @@ var rhit = rhit || {};
 /** globals */
 rhit.counter = 0;
 
-rhit.updateCounter = function () {
-	
-};
-
-/* Main */
-/** function and class syntax examples */
 rhit.main = function () {
 	console.log("Ready");
 	let buttons = document.querySelectorAll("#button-group button")
@@ -17,8 +11,6 @@ rhit.main = function () {
 			const amount = parseInt(button.dataset.amount);
 			const isMult = button.dataset.isMult;
 			rhit.updateCounter(amount, isMult);
-			
-
 		};
 	});
 };
