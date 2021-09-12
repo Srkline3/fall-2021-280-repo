@@ -1,36 +1,30 @@
-/**
- * @fileoverview
- * Provides the JavaScript interactions for all pages.
- *
- * @author 
- * PUT_YOUR_NAME_HERE
- */
-
-/** namespace. */
 var rhit = rhit || {};
 
 /** globals */
 rhit.variableName = "";
 
-/** function and class syntax examples */
-rhit.functionName = function () {
-	/** function body */
+rhit.updateCounter = function () {
+	
 };
-
-rhit.ClassName = class {
-	constructor() {
-
-	}
-
-	methodName() {
-
-	}
-}
 
 /* Main */
 /** function and class syntax examples */
 rhit.main = function () {
 	console.log("Ready");
+	let buttons = document.querySelectorAll("#button-group button")
+	buttons.forEach((button) => {
+		button.onclick = (event) => {
+			const amount = parseInt(button.dataset.amount);
+			const isMult = button.dataset.isMult;
+
+			if(isMult){
+
+			}else{
+
+			}
+
+		};
+	});
 };
 
 rhit.main();
