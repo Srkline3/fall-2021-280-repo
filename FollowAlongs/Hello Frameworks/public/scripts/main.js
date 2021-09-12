@@ -1,7 +1,7 @@
 var rhit = rhit || {};
 
 /** globals */
-rhit.variableName = "";
+rhit.counter = 0;
 
 rhit.updateCounter = function () {
 	
@@ -16,15 +16,20 @@ rhit.main = function () {
 		button.onclick = (event) => {
 			const amount = parseInt(button.dataset.amount);
 			const isMult = button.dataset.isMult;
-
-			if(isMult){
-
-			}else{
-
-			}
+			rhit.updateCounter(amount, isMult);
+			
 
 		};
 	});
 };
+
+rhit.updateCounter = (amount, isMult) => {
+	if(isMult){
+		rhit.counter *= amount;
+	}else{
+		rhit.counter += amount;
+	}
+	document.querySelector("#counter").innerHTML = `Count = ${rhit.counter}`;
+}
 
 rhit.main();
