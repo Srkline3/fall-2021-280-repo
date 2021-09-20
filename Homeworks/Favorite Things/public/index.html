@@ -23,22 +23,36 @@
       <h1 id="counter">0</h1>
     </div>
     <div id="numberButtons" class="row justify-content-center"> 
-      <button>-1</button>
-      <button>Reset</button>
-      <button>+1</button>    
+      <div class="col-4">
+        <button type="button" id="minusButton" class="btn btn-outline-primary btn-block">-1</button>
+      </div>
+      <div class="col-4">
+        <button type="button" id="resetButton" class="btn btn-outline-primary btn-block">Reset</button>
+      </div>
+      <div class="col-4">
+        <button type="button" id="plusButton" class="btn btn-outline-primary btn-block">+1</button>
+      </div>
     </div>
     <hr>
-    <div>
+    <div class="row">
       <h1>Favorite Color:</h1>
     </div>
-    <div>
-      <div>#800000</div>
+    <div id="favoriteColorContainer" class="mx-auto"> 
+      <div id="favoriteColorBox">#800000</div>
     </div>
-    <div id="colorButtons">
-      <button>Blue</button>
-      <button>Green</button>
-      <button>Red</button>
-      <button>Blue</button>
+    <div id="colorButtons" class="row no-gutters justify-content-center">
+      <div class="col-3">
+        <button id="blue" class="btn btn-outline-primary btn-block">Blue</button>
+      </div>
+      <div class="col-3">
+        <button id="green" class="btn btn-outline-primary btn-block">Green</button>
+      </div>
+      <div class="col-3">
+        <button id="red" class="btn btn-outline-primary btn-block">Red</button>
+      </div>
+      <div class="col-3">
+        <button id="purple" class="btn btn-outline-primary btn-block">Purple</button>
+      </div>
     </div>
     <hr>
   </div>

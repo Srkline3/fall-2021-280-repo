@@ -14,3 +14,46 @@ body {
 #counter {
     text-align: center;
 }
+
+.no-gutters.col, .no-gutters>[class*=col-]{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+#favoriteColorContainer {
+    width: 200px;
+    margin: 20px;
+}
+
+#plusButton, #resetButton, #minusButton {
+    background-color: #800000;
+    color: white;
+    border-color: #800000;
+}
+
+#blue {
+    background-color: blue;
+    color: white;
+}
+
+#green {
+    background-color: green;
+    color: white;
+}
+
+#red {
+    background-color: red;
+    color: white;
+}
+
+#purple {
+    background-color: purple;
+    color: white;
+}
+
+#favoriteColorBox {
+    background-color: #800000;
+    line-height: 100px;
+    text-align: center;
+    color: white;
+}
