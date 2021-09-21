@@ -3,34 +3,38 @@
  * Provides the JavaScript interactions for all pages.
  *
  * @author 
- * PUT_YOUR_NAME_HERE
+ * ur mum hahahah
+ * lol jk it's Trey
  */
 
-/** namespace. */
-var rhit = rhit || {};
+let counter = 0;
 
-/** globals */
-rhit.variableName = "";
+function main(){
+	document.getElementById("minusButton").addEventListener("click", () => {
+		counter = counter - 1;
+		updateView();
+	});
+	document.getElementById("plusButton").addEventListener("click", () => {
+		counter++;
+		updateView();
+	});
+	document.getElementById("resetButton").addEventListener("click", () => {
+		counter = 0;
+		updateView();
+	});
 
-/** function and class syntax examples */
-rhit.functionName = function () {
-	/** function body */
-};
-
-rhit.ClassName = class {
-	constructor() {
-
-	}
-
-	methodName() {
-
-	}
+	let sillyButtons = document.querySelectorAll("#colorButtons button");
+	let favoriteColor = document.getElementById("favoriteColorBox");
+	sillyButtons.forEach((button) => {
+		button.addEventListener("click", () => {
+			favoriteColor.style.backgroundColor = button.dataset.color;
+			favoriteColor.innerHTML = button.dataset.color;
+		})
+	});
 }
 
-/* Main */
-/** function and class syntax examples */
-rhit.main = function () {
-	console.log("Ready");
-};
+function updateView() {
+    document.getElementById("counter").innerHTML = `${counter}`;
+}
 
-rhit.main();
+main();

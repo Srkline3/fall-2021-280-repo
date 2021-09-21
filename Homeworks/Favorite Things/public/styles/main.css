@@ -31,6 +31,14 @@ body {
     border-color: #800000;
 }
 
+#colorButtons button:hover {
+    color: black;
+}
+
+#colorButtons button:focus {
+    color: black;
+}
+
 #blue {
     background-color: blue;
     color: white;
